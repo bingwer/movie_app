@@ -1,23 +1,9 @@
 import React from 'react';
-//import axious from 'axios';
-import './App.css';
-import { HashRouter, Route } from 'react-router-dom';
-import About from './routes/About';
-import Home from './routes/Home';
+import axious from 'axios';
+import Movie from '../components/Movie';
+import './Home.css';
 
-function App() {
-  return (
-    <HashRouter>
-      <Route path="/" exact={true} component={Home} />
-      <Route path="/about" component={About} />
-    </HashRouter>
-  );
-}
-/* 라우터는 화면을  이동해주는 장치 path 뒤에 오는 인자는 주소값을 보여준다 기본은 home라우터를, 주소뒤 /about 이 붙으면 about 라우터를 보여줌*/
-/* 원래 라우터는 root -> about 순서대로 path props가 있는지 찾는다. 따라서 /about으로 접속할지라도 home과, aobut 컴포넌트가 모두 그려진다.
-   그것을 방지하기 위해 root 라우터에 exact={true}를 넣어주면 home 컴포넌트가 그려지는것을 방지할 수 있다. */
-
-/*class App2 extends React.Component {
+class Home extends React.Component {
   state = {
     isLoading: true,
     movies: [],
@@ -33,7 +19,7 @@ function App() {
       'https://yts-proxy.now.sh/list_movies.json?sort_by=rating',
     );
     this.setState({
-      movies, // movies(state변수) : movies(구조분해 할당으로  받은 데이터 변수) 와 같음
+      movies /* movies(state변수) : movies(구조분해 할당으로  받은 데이터 변수) 와 같음*/,
       isLoading: false,
     });
     // ES6에서는 객체의 키와 대입할 변수의 이름이 같다면 코드를 축약 할 수 있다
@@ -69,6 +55,6 @@ function App() {
       </section>
     );
   }
-}*/
+}
 
-export default App;
+export default Home;
