@@ -1,5 +1,6 @@
 import React from 'react';
 import axious from 'axios';
+import Movie from './Movie';
 
 class App extends React.Component {
   state = {
@@ -13,7 +14,9 @@ class App extends React.Component {
       data: {
         data: { movies },
       },
-    } = await axious.get('https://yts-proxy.now.sh/list_movies.json');
+    } = await axious.get(
+      'https://yts-proxy.now.sh/list_movies.json?sort_by=rating',
+    );
     this.setState({
       movies /* movies(state변수) : movies(구조분해 할당으로  받은 데이터 변수) 와 같음*/,
       isLoading: false,
@@ -26,8 +29,25 @@ class App extends React.Component {
   }
 
   render() {
-    const { isLoading } = this.state;
-    return <div>{isLoading ? 'Loading...' : 'We are ready'}</div>;
+    const { isLoading, movies } = this.state;
+    return (
+      <div>
+        {isLoading
+          ? 'Loading...'
+          : movies.map((movie) => {
+              return (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  year={movie.year}
+                  title={movie.title}
+                  summary={movie.summary}
+                  poseter={movie.medium_cover_image}
+                />
+              );
+            })}
+      </div>
+    );
   }
 }
 
