@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/bingwer/movie_app/static/css/main.3983e3e2.chunk.css",
+    "main.js": "/bingwer/movie_app/static/js/main.792d6e9d.chunk.js",
+    "main.js.map": "/bingwer/movie_app/static/js/main.792d6e9d.chunk.js.map",
+    "runtime-main.js": "/bingwer/movie_app/static/js/runtime-main.e3accfde.js",
+    "runtime-main.js.map": "/bingwer/movie_app/static/js/runtime-main.e3accfde.js.map",
+    "static/js/2.cda10918.chunk.js": "/bingwer/movie_app/static/js/2.cda10918.chunk.js",
+    "static/js/2.cda10918.chunk.js.map": "/bingwer/movie_app/static/js/2.cda10918.chunk.js.map",
+    "index.html": "/bingwer/movie_app/index.html",
+    "precache-manifest.039ff7e74b60f436ceb5c6c155a79e5b.js": "/bingwer/movie_app/precache-manifest.039ff7e74b60f436ceb5c6c155a79e5b.js",
+    "service-worker.js": "/bingwer/movie_app/service-worker.js",
+    "static/css/main.3983e3e2.chunk.css.map": "/bingwer/movie_app/static/css/main.3983e3e2.chunk.css.map",
+    "static/js/2.cda10918.chunk.js.LICENSE.txt": "/bingwer/movie_app/static/js/2.cda10918.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3accfde.js",
+    "static/js/2.cda10918.chunk.js",
+    "static/css/main.3983e3e2.chunk.css",
+    "static/js/main.792d6e9d.chunk.js"
+  ]
+}
