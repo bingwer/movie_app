@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,5 +11,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #eff3f7;
+}
+
+#root {
   height: 100%;
 }

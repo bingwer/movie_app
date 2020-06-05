@@ -3,13 +3,13 @@ import PropsTypes from 'prop-types';
 import '../components/Movie.css';
 import { Link } from 'react-router-dom';
 
-function Movie({ title, year, summary, poster, genres }) {
+function Movie({ title, year, summary, poster, genres, lgPoster }) {
   return (
     <div className="movie">
       <Link
         to={{
           pathname: '/movie-detail',
-          state: { year, title, summary, poster, genres },
+          state: { year, title, summary, poster, genres, lgPoster },
         }}
       >
         <img src={poster} alt={title} title={title} />

@@ -7,6 +7,8 @@ import Home from './routes/Home';
 import Detail from './routes/Detail';
 import Navigation from './components/Navigation';
 
+//TODO : Detail 화면 만들기 // api를 한국 api로 변경해보기
+
 function App() {
   return (
     <HashRouter>
